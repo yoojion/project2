@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gsap Tween</title>
+    <style>
+      .box {
+        margin: 15px;
+      }
+      .box1 {
+        width: 100px;
+        height: 100px;
+        background: orange;
+      }
+      .box2 {
+        width: 200px;
+        height: 100px;
+        background: greenyellow;
+      }
+      .box3 {
+        width: 100px;
+        height: 200px;
+        background: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3">box3</div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script>
+      //   gsap.to(요소,{옵션키1:옵션1값,옵션키2:옵션값2});
+      gsap.to(".box", { x: 200, duration: 2 });
+      gsap.to(".box1",{duration:3,x:250,opacity:0.2,delay:2})
+      gsap.to(".box2",{duration:3,rotate:250,opacity:0.2,delay:3,scale:1.3})
+      gsap.to(".box3",{duration:3,rotate:250,opacity:0.15,fontSize:50,width:300,delay:5,backgroundColor:"red",ease:"steps(10)"})
+    </script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+.item {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.num {
+  font-size: 5vw;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+}
+.img_wrap {
+  width: 30%;
+  position: relative;
+  padding-bottom: 20%;
+  overflow: hidden;
+}
+.img {
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.sec1 .img {
+  background-image: url(http://qwerew.cafe24.com/images/1.jpg);
+}
+.sec2 .img {
+  background-image: url(http://qwerew.cafe24.com/images/2.jpg);
+}
+.sec3 .img {
+  background-image: url(http://qwerew.cafe24.com/images/3.jpg);
+}
+.sec4 .img {
+  background-image: url(http://qwerew.cafe24.com/images/4.jpg);
+}
+.sec5 .img {
+  background-image: url(http://qwerew.cafe24.com/images/5.jpg);
+}
+.sec6 .img {
+  background-image: url(http://qwerew.cafe24.com/images/6.jpg);
+}
+.sec7 .img {
+  background-image: url(http://qwerew.cafe24.com/images/7.jpg);
+}
+.sec8 .img {
+  background-image: url(http://qwerew.cafe24.com/images/8.jpg);
+}
+.sec9 .img {
+  background-image: url(http://qwerew.cafe24.com/images/9.jpg);
+}
+.item:nth-child(even) {
+  background: pink;
+}
+main.fix {
+  overflow: hidden;
+}
+.fix {
+  display: flex;
+  flex-wrap: nowrap;
+  width: calc(100% * 5);
+}
+.fix > section {
+  width: 100%;
+}

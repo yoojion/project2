@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const num = [1, 2, 3, 4, 5];
+      const doubleNum = num.map((num) => num * 2);
+      console.log(doubleNum);
+
+      let cats = ["땅콩이", "얼룩이", "회색이"];
+      console.log(cats);
+      let newCats = cats.map(function (a, b) {
+        return a + " 밥 먹자!!";
+        console.log("a:", a, "b:", b);
+      });
+      newCats.forEach(function (a, b) {
+        console.log(a, b);
+      });
+      document.write(newCats);
+      //newCats.forEach
+    </script>
+  </body>
+</html>

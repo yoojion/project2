@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>easing</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #title {
+        width: 700px;
+        margin: 100px auto;
+      }
+
+      .box {
+        background-color: purple;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        font-size: 12px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="title">
+      <div class="box box1">none</div>
+      <div class="box box2">power1</div>
+      <div class="box box3">power2</div>
+      <div class="box box4">power3</div>
+      <div class="box box5">power4</div>
+      <div class="box box6">back</div>
+      <div class="box box7">elastic</div>
+      <div class="box box8">bounce</div>
+      <div class="box box9">rough</div>
+      <div class="box box10">slow</div>
+      <div class="box box11">steps</div>
+      <div class="box box12">circ</div>
+      <div class="box box13">expo</div>
+      <div class="box box14">sine</div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script>
+      gsap.to(".box1", { x: 600, duration: 3, ease: "none" });
+      gsap.to(".box2", { x: 600, duration: 3, ease: "power1" });
+      gsap.to(".box3", { x: 600, duration: 3, ease: "power2" });
+      gsap.to(".box4", { x: 600, duration: 3, ease: "power3" });
+      gsap.to(".box5", { x: 600, duration: 3, ease: "power4" });
+      gsap.to(".box6", { x: 600, duration: 3, ease: "back" });
+      gsap.to(".box7", { x: 600, duration: 3, ease: "elastic" });
+      gsap.to(".box8", { x: 600, duration: 3, ease: "bounce" });
+      gsap.to(".box9", { x: 600, duration: 3, ease: "rough" });
+      gsap.to(".box10", { x: 600, duration: 3, ease: "slow" });
+      gsap.to(".box11", { x: 600, duration: 3, ease: "steps(10)" });
+      gsap.to(".box12", { x: 600, duration: 3, ease: "circ" });
+      gsap.to(".box13", { x: 600, duration: 3, ease: "expo" });
+      gsap.to(".box14", { x: 600, duration: 3, ease: "sine" });
+    </script>
+  </body>
+</html>
