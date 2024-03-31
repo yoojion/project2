@@ -633,7 +633,7 @@ section6
   position: relative;
 }
 .section6 .banner_wrap .section6_banner {
-  width: 1424px;
+  width: 1440px;
   height: 800px;
   border-radius: 36px;
   position: absolute;
@@ -646,19 +646,19 @@ section6
   margin-top: 20px;
 }
 .section6 .banner_wrap .no1 {
-  background: url(../source/image/sec6_banner1.jpg) center center/contain
+  background: url(../source/image/sec6_banner1.jpg) center center/cover
     no-repeat;
 }
 .section6 .banner_wrap .no2 {
-  background: url(../source/image/sec6_banner2.jpg) center center/contain
+  background: url(../source/image/sec6_banner2.jpg) center center/cover
     no-repeat;
 }
 .section6 .banner_wrap .no3 {
-  background: url(../source/image/sec6_banner3.jpg) center center/contain
+  background: url(../source/image/sec6_banner3.jpg) center center/cover
     no-repeat;
 }
 .section6 .banner_wrap .no4 {
-  background: url(../source/image/sec6_banner4.gif) center center/contain
+  background: url(../source/image/sec6_banner4.gif) center center/cover
     no-repeat;
 }
 
