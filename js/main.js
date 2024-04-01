@@ -1,7 +1,8 @@
-$(".dep2").hide();
+// $(".dep2").hide();
 $(".dep1").on({
   mouseenter: function () {
     $(".header_bottom_wrap").addClass("active");
+    $(".dep1_no").removeClass("active");
     $(this).find(".dep2").stop().slideDown();
   },
   mouseleave: function () {
@@ -9,14 +10,14 @@ $(".dep1").on({
     $(".dep2").stop().slideUp();
   },
 });
-$(".header_bottom_wrap").on({
-  mouseenter: function () {
-    $(".header_bottom_wrap").addClass("active");
-  },
-  mouseleave: function () {
-    $(".header_bottom_wrap").removeClass("active");
-  },
-});
+// $(".dep1").on({
+//   mouseenter: function () {
+//     $(".header_bottom_wrap").addClass("active");
+//   },
+//   mouseleave: function () {
+//     $(".header_bottom_wrap").removeClass("active");
+//   },
+// });
 
 const img1 = $(".img_wrap1 .img1");
 const content_wrap1 = $(".img_wrap1 .content_wrap");
