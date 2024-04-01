@@ -1,4 +1,4 @@
-// $(".dep2").hide();
+$(".dep2").hide();
 $(".dep1").on({
   mouseenter: function () {
     $(".header_bottom_wrap").addClass("active");
