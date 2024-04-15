@@ -1,599 +1,405 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>티다문구점 리디자인</title>
-    <link rel="shortcut icon" href="./source/image/favicon.svg" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="./js/main.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <div class="header_top">
-        <div class="header_top_wrap df inner">
-          <div class="menu">
-            <a href="#"><img src="./source/image/ico_menu.svg" alt="메뉴" /></a>
-          </div>
-          <h1 class="logo">
-            <a href="./index.html"
-              ><img src="./source/image/logo.svg" alt="티다문구점 로고"
-            /></a>
-          </h1>
-          <ul class="utility df">
-            <li class="search">
-              <a href="#"><img src="./source/image/ico_search.svg" alt="" /></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>티다문구점 리디자인</title>
+  <link rel="shortcut icon" href="./source/image/favicon.svg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header_top">
+      <div class="header_top_wrap df inner">
+        <div class="menu">
+          <a href="#"><img src="./source/image/ico_menu.svg" alt="메뉴" /></a>
+        </div>
+        <h1 class="logo">
+          <a href="./index.html"><img src="./source/image/logo.svg" alt="티다문구점 로고" /></a>
+        </h1>
+        <nav class="nav2 df">
+          <a href="#">Home</a>
+          <a href="#">티다 Made</a>
+          <a href="#">Mobile</a>
+          <a href="#">Life</a>
+          <a href="#">Digital</a>
+          <a href="#">Special Show</a>
+          <a href="#">Event</a>
+        </nav>
+        <ul class="utility df">
+          <li class="search">
+            <a href="#"><img src="./source/image/ico_search.svg" alt="" /></a>
+          </li>
+          <li class="delivery">
+            <a href="#"><img src="./source/image/ico_delivery.svg" alt="" /></a>
+          </li>
+          <li class="cart">
+            <a href="#"><img src="./source/image/ico_cart.svg" alt="" /></a>
+          </li>
+          <li class="login">
+            <a href="#"><img src="./source/image/ico_login.svg" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header_bottom">
+      <div class="header_bottom_wrap">
+        <nav>
+          <ul class="df">
+            <li class="dep1_no">
+              <div class="dep1_wrap df">
+                <img src="./source/image/dep1_home.png" alt="" />
+                <a href="#">Home</a>
+              </div>
             </li>
-            <li class="delivery">
-              <a href="#"
-                ><img src="./source/image/ico_delivery.svg" alt=""
-              /></a>
+            <!-- Home -->
+            <li class="dep1">
+              <div class="dep1_wrap df">
+                <img src="./source/image/dep1_made.png" alt="" />
+                <a href="#">티다 Made</a>
+              </div>
+              <ul class="dep2 made">
+                <li><a href="#">OH MY SHAKESPEARE</a></li>
+                <li><a href="#">TIKI-TAKA SOOBOOKZ</a></li>
+                <li><a href="#">Archive</a></li>
+              </ul>
             </li>
-            <li class="cart">
-              <a href="#"><img src="./source/image/ico_cart.svg" alt="" /></a>
+            <!-- 티다 Made -->
+            <li class="dep1">
+              <div class="dep1_wrap df">
+                <img src="./source/image/dep1_mobile.png" alt="" />
+                <a href="#">Mobile</a>
+              </div>
+              <ul class="dep2 df">
+                <li>
+                  <a href="#">휴대폰 케이스</a>
+                  <ul class="dep3">
+                    <li><a href="#">아이폰/갤럭시 전모델</a></li>
+                    <li><a href="#">삼성정품케이스 및 패키지</a></li>
+                    <li><a href="#">애플정품케이스</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">무선이어폰 케이스</a>
+                  <ul class="dep3">
+                    <li><a href="#">에어팟/버즈 케이스</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">모바일 액세서리</a>
+                  <ul class="dep3">
+                    <li><a href="#">보호필름</a></li>
+                    <li><a href="#">보조배터리</a></li>
+                    <li><a href="#">충전어뎁터/케이블</a></li>
+                    <li><a href="#">휴대폰 스트랩</a></li>
+                    <li><a href="#">그립톡</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">모바일 주변 기기</a>
+                  <ul class="dep3">
+                    <li><a href="#">유/무선 이어폰</a></li>
+                    <li><a href="#">11번가 제휴몰</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">휴대폰.유무선상품</a>
+                  <ul class="dep3">
+                    <li><a href="#">T다이렉트샵</a></li>
+                  </ul>
+                </li>
+              </ul>
             </li>
-            <li class="login">
-              <a href="#"><img src="./source/image/ico_login.svg" alt="" /></a>
+            <!-- Mobile -->
+            <li class="dep1">
+              <div class="dep1_wrap df">
+                <img src="./source/image/dep1_life.png" alt="" />
+                <a href="#">Life</a>
+              </div>
+              <ul class="dep2 df">
+                <li>
+                  <a href="#">디지털 라이프</a>
+                  <ul class="dep3">
+                    <li><a href="#">즉석 카메라</a></li>
+                    <li><a href="#">카메라 주변기기</a></li>
+                    <li><a href="#">디지털 주변기기</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">생활</a>
+                  <ul class="dep3">
+                    <li><a href="#">테이블웨어</a></li>
+                    <li><a href="#">패션 악세서리</a></li>
+                    <li><a href="#">인센스/향초</a></li>
+                    <li><a href="#">홈패브릭</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">디자인 문구</a>
+                  <ul class="dep3">
+                    <li><a href="#">필기류</a></li>
+                    <li><a href="#">포스터</a></li>
+                    <li><a href="#">기타문구</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">반려라이프</a>
+                </li>
+              </ul>
             </li>
+            <!-- Life -->
+            <li class="dep1">
+              <div class="dep1_wrap df">
+                <img src="./source/image/dep1_digital.png" alt="" />
+                <a href="#">Digital</a>
+              </div>
+              <ul class="dep2 df">
+                <li>
+                  <a href="#">모바일 배경화면</a>
+                  <ul class="dep3">
+                    <li><a href="#">휴대폰 배경화면</a></li>
+                    <li><a href="#">PC/태블릿 배경화면</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">카카오톡 테마</a>
+                  <ul class="dep3">
+                    <li><a href="#">iOS 테마</a></li>
+                    <li><a href="#">Android 테마</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">다이어리 / 플래너</a>
+                  <ul class="dep3">
+                    <li><a href="#">먼슬리</a></li>
+                    <li><a href="#">위클리</a></li>
+                    <li><a href="#">데일리</a></li>
+                    <li><a href="#">스터디</a></li>
+                    <li><a href="#">가계부</a></li>
+                    <li><a href="#">만년형</a></li>
+                    <li><a href="#">기타 다이어리</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">노트</a>
+                  <ul class="dep3">
+                    <li><a href="#">노트커버</a></li>
+                    <li><a href="#">기획/업무</a></li>
+                    <li><a href="#">독서/리뷰</a></li>
+                    <li><a href="#">기타노트</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">스티커</a>
+                  <ul class="dep3">
+                    <li><a href="#">캐릭터</a></li>
+                    <li><a href="#">심플</a></li>
+                    <li><a href="#">마스킹테이프</a></li>
+                    <li><a href="#">기타 스티커</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- Digital -->
+            <li class="dep1_no">
+              <div class="dep1_wrap df">
+                <img src="./source/image/dep1_specialshow.png" alt="" />
+                <a href="#">Special Show</a>
+              </div>
+            </li>
+            <!-- Special Show -->
+            <li class="dep1_no">
+              <div class="dep1_wrap df">
+                <img src="./source/image/dep1_event.png" alt="" />
+                <a href="#">Event</a>
+              </div>
+            </li>
+            <!-- Event -->
           </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="section1 inner">
+      <div class="main_banner">
+        <div class="main_banner_text">
+          <h2>TIKI-TAKA<br />SOOBOOKZ</h2>
+          <h3>티다문구점 X 수북즈 누렁이와 탱고 에디션</h3>
         </div>
       </div>
-      <div class="header_bottom">
-        <div class="header_bottom_wrap">
-          <nav>
-            <ul class="df">
-              <li class="dep1_no">
-                <div class="dep1_wrap df">
-                  <img src="./source/image/dep1_home.png" alt="" />
-                  <a href="#">Home</a>
-                </div>
-              </li>
-              <!-- Home -->
-              <li class="dep1">
-                <div class="dep1_wrap df">
-                  <img src="./source/image/dep1_made.png" alt="" />
-                  <a href="#">티다 Made</a>
-                </div>
-                <ul class="dep2">
-                  <li><a href="#">OH MY SHAKESPEARE</a></li>
-                  <li><a href="#">TIKI-TAKA SOOBOOKZ</a></li>
-                  <li><a href="#">Archive</a></li>
-                </ul>
-              </li>
-              <!-- 티다 Made -->
-              <li class="dep1">
-                <div class="dep1_wrap df">
-                  <img src="./source/image/dep1_mobile.png" alt="" />
-                  <a href="#">Mobile</a>
-                </div>
-                <ul class="dep2 df">
-                  <li>
-                    <a href="#">휴대폰 케이스</a>
-                    <ul class="dep3">
-                      <li><a href="#">아이폰/갤럭시 전모델</a></li>
-                      <li><a href="#">삼성정품케이스 및 패키지</a></li>
-                      <li><a href="#">애플정품케이스</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">무선이어폰 케이스</a>
-                    <ul class="dep3">
-                      <li><a href="#">에어팟/버즈 케이스</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">모바일 액세서리</a>
-                    <ul class="dep3">
-                      <li><a href="#">보호필름</a></li>
-                      <li><a href="#">보조배터리</a></li>
-                      <li><a href="#">충전어뎁터/케이블</a></li>
-                      <li><a href="#">휴대폰 스트랩</a></li>
-                      <li><a href="#">그립톡</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">모바일 주변 기기</a>
-                    <ul class="dep3">
-                      <li><a href="#">유/무선 이어폰</a></li>
-                      <li><a href="#">11번가 제휴몰</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">휴대폰.유무선상품</a>
-                    <ul class="dep3">
-                      <li><a href="#">T다이렉트샵</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <!-- Mobile -->
-              <li class="dep1">
-                <div class="dep1_wrap df">
-                  <img src="./source/image/dep1_life.png" alt="" />
-                  <a href="#">Life</a>
-                </div>
-                <ul class="dep2 df">
-                  <li>
-                    <a href="#">디지털 라이프</a>
-                    <ul class="dep3">
-                      <li><a href="#">즉석 카메라</a></li>
-                      <li><a href="#">카메라 주변기기</a></li>
-                      <li><a href="#">디지털 주변기기</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">생활</a>
-                    <ul class="dep3">
-                      <li><a href="#">테이블웨어</a></li>
-                      <li><a href="#">패션 악세서리</a></li>
-                      <li><a href="#">인센스/향초</a></li>
-                      <li><a href="#">홈패브릭</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">디자인 문구</a>
-                    <ul class="dep3">
-                      <li><a href="#">필기류</a></li>
-                      <li><a href="#">포스터</a></li>
-                      <li><a href="#">기타문구</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">반려라이프</a>
-                  </li>
-                </ul>
-              </li>
-              <!-- Life -->
-              <li class="dep1">
-                <div class="dep1_wrap df">
-                  <img src="./source/image/dep1_digital.png" alt="" />
-                  <a href="#">Digital</a>
-                </div>
-                <ul class="dep2 df">
-                  <li>
-                    <a href="#">모바일 배경화면</a>
-                    <ul class="dep3">
-                      <li><a href="#">휴대폰 배경화면</a></li>
-                      <li><a href="#">PC/태블릿 배경화면</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">카카오톡 테마</a>
-                    <ul class="dep3">
-                      <li><a href="#">iOS 테마</a></li>
-                      <li><a href="#">Android 테마</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">다이어리 / 플래너</a>
-                    <ul class="dep3">
-                      <li><a href="#">먼슬리</a></li>
-                      <li><a href="#">위클리</a></li>
-                      <li><a href="#">데일리</a></li>
-                      <li><a href="#">스터디</a></li>
-                      <li><a href="#">가계부</a></li>
-                      <li><a href="#">만년형</a></li>
-                      <li><a href="#">기타 다이어리</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">노트</a>
-                    <ul class="dep3">
-                      <li><a href="#">노트커버</a></li>
-                      <li><a href="#">기획/업무</a></li>
-                      <li><a href="#">독서/리뷰</a></li>
-                      <li><a href="#">기타노트</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">스티커</a>
-                    <ul class="dep3">
-                      <li><a href="#">캐릭터</a></li>
-                      <li><a href="#">심플</a></li>
-                      <li><a href="#">마스킹테이프</a></li>
-                      <li><a href="#">기타 스티커</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <!-- Digital -->
-              <li class="dep1_no">
-                <div class="dep1_wrap df">
-                  <img src="./source/image/dep1_specialshow.png" alt="" />
-                  <a href="#">Special Show</a>
-                </div>
-              </li>
-              <!-- Special Show -->
-              <li class="dep1_no">
-                <div class="dep1_wrap df">
-                  <img src="./source/image/dep1_event.png" alt="" />
-                  <a href="#">Event</a>
-                </div>
-              </li>
-              <!-- Event -->
-            </ul>
-          </nav>
+    </div>
+    <div class="section2 inner">
+      <h4>티다문구점 콜라보<br />익스클루시브 에디션</h4>
+      <div class="section2_img_wrap">
+        <div class="img_wrap1">
+          <div class="img1"></div>
+          <div class="content_wrap df">
+            <div class="content_wrap_img"></div>
+            <div class="content_wrap_text">티끌 모아 티다문구점</div>
+          </div>
         </div>
-      </div>
-    </header>
-    <main>
-      <div class="section1 inner">
-        <div class="main_banner">
-          <div class="main_banner_text">
-            <h2>TIKI-TAKA<br />SOOBOOKZ</h2>
-            <h3>티다문구점 X 수북즈 누렁이와 탱고 에디션</h3>
+        <div class="img_wrap2">
+          <div class="img2"></div>
+          <div class="content_wrap df">
+            <div class="content_wrap_img"></div>
+            <div class="content_wrap_text">귀여운 것들만 모아서</div>
+          </div>
+        </div>
+        <div class="img_wrap3">
+          <div class="img3"></div>
+          <div class="content_wrap df">
+            <div class="content_wrap_img"></div>
+            <div class="content_wrap_text">어머 저건 꼭 사야해!</div>
           </div>
         </div>
       </div>
-      <div class="section2 inner">
-        <h4>티다문구점 콜라보<br />익스클루시브 에디션</h4>
-        <div class="section2_img_wrap">
-          <div class="img_wrap1">
-            <div class="img1"></div>
-            <div class="content_wrap df">
-              <div class="content_wrap_img"></div>
-              <div class="content_wrap_text">티끌 모아 티다문구점</div>
-            </div>
-          </div>
-          <div class="img_wrap2">
-            <div class="img2"></div>
-            <div class="content_wrap df">
-              <div class="content_wrap_img"></div>
-              <div class="content_wrap_text">귀여운 것들만 모아서</div>
-            </div>
-          </div>
-          <div class="img_wrap3">
-            <div class="img3"></div>
-            <div class="content_wrap df">
-              <div class="content_wrap_img"></div>
-              <div class="content_wrap_text">어머 저건 꼭 사야해!</div>
-            </div>
-          </div>
+    </div>
+    <div class="section3 inner">
+      <div class="section3_top df">
+        <div class="section3_img1">
+          <img class="be_svg" src="./source/image/be.svg" alt="" />
+          <p>OH MY SHAKESPEARE</p>
+          <p> 티다문구점 X 민음사<br /> 셰익스피어 에디션 </p>
         </div>
-      </div>
-      <div class="section3 inner">
-        <div class="section3_top df">
-          <div class="section3_img1">
-            <img class="be_svg" src="./source/image/be.svg" alt="" />
-            <p>OH MY SHAKESPEARE</p>
-            <p>
-              티다문구점 X 민음사<br />
-              셰익스피어 에디션
-            </p>
+        <div class="section3_item df">
+          <div class="section3_item_btn df">
+            <div class="prev"></div>
+            <div class="next"></div>
           </div>
-          <div class="section3_item df">
-            <div class="section3_item_btn df">
-              <div class="prev"></div>
-              <div class="next"></div>
-            </div>
-            <div class="section3_item_wrap df">
-              <div class="section3_item1 size">
-                <div class="item_img">
-                  <div class="limited"></div>
-                </div>
-                <div class="item_text">
-                  <div class="shopname">티다문구점</div>
-                  <div class="itemname">베니스와 상인 니트 담요</div>
-                  <div class="price">69,000</div>
-                  <div class="review df">
-                    <div class="review_img"></div>
-                    <div class="review_text">0(0)</div>
-                  </div>
-                </div>
-              </div>
-              <div class="section3_item2 size">
-                <div class="item_img">
-                  <div class="limited"></div>
-                </div>
-                <div class="item_text">
-                  <div class="shopname">티다문구점</div>
-                  <div class="itemname">십이야 리드 머그컵</div>
-                  <div class="price">20,000</div>
-                  <div class="review df">
-                    <div class="review_img"></div>
-                    <div class="review_text">0(0)</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section3_bottom df">
-          <div class="section3_item df">
-            <div class="section3_item_btn df">
-              <div class="prev"></div>
-              <div class="next"></div>
-            </div>
-            <div class="section3_item_wrap df">
-              <div class="section3_item3 size">
-                <div class="item_img">
-                  <div class="limited"></div>
-                </div>
-                <div class="item_text">
-                  <div class="shopname">티다문구점</div>
-                  <div class="itemname">누렁이와 탱고 무선충전기</div>
-                  <div class="price">35,000</div>
-                  <div class="review df">
-                    <div class="review_img"></div>
-                    <div class="review_text">0(0)</div>
-                  </div>
-                </div>
-              </div>
-              <div class="section3_item4 size">
-                <div class="item_img">
-                  <div class="limited"></div>
-                </div>
-                <div class="item_text">
-                  <div class="shopname">티다문구점</div>
-                  <div class="itemname">누렁이와 탱고 콜드컵</div>
-                  <div class="price">12,000</div>
-                  <div class="review df">
-                    <div class="review_img"></div>
-                    <div class="review_text">0(0)</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="section3_img2">
-            <img class="be_svg" src="./source/image/be.svg" alt="" />
-            <p>TIKI-TAKA SOOBOOKZ</p>
-            <p>
-              티다문구점 X 수북즈<br />
-              누렁이와 탱고 에디션
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="section4 inner">
-        <div class="cool_img"></div>
-      </div>
-      <div class="section5 inner df">
-        <div class="section5_left">
-          <p>지금 뜨는 베스트</p>
-          <p>Best</p>
-          <div class="category df">
-            <div class="mobile">Mobile</div>
-            <div class="life">Life</div>
-            <div class="digital">Digital</div>
-          </div>
-        </div>
-        <div class="section5_right">
-          <div class="section5_item_wrap top df">
-            <div class="section5_item1 size">
+          <div class="section3_item_wrap df">
+            <div class="section3_item1 size">
               <div class="item_img">
-                <div class="num_deco"><div class="num">1</div></div>
+                <div class="limited"></div>
               </div>
               <div class="item_text">
-                <div class="shopname">삼성전자</div>
-                <div class="itemname">갤럭시 S24 스마트 뷰 월렛 케이스</div>
-                <div class="price">29% 34,900</div>
-                <div class="price_ns">49,500</div>
+                <div class="shopname">티다문구점</div>
+                <div class="itemname">베니스와 상인 니트 담요</div>
+                <div class="price">69,000</div>
                 <div class="review df">
-                  <div class="review_star df">
-                    <div class="review_img"></div>
-                    <div class="review_text">0(0)</div>
-                  </div>
-                  <div class="review_heart df">
-                    <div class="review_img"></div>
-                    <div class="review_text">1</div>
-                  </div>
+                  <div class="review_img"></div>
+                  <div class="review_text">0(0)</div>
                 </div>
               </div>
             </div>
-            <div class="section5_item2 size">
+            <div class="section3_item2 size">
               <div class="item_img">
-                <div class="num_deco"><div class="num">2</div></div>
+                <div class="limited"></div>
               </div>
               <div class="item_text">
-                <div class="shopname">삼성전자</div>
-                <div class="itemname">갤럭시 S24 스마트 뷰 월렛 케이스</div>
-                <div class="price">29% 34,900</div>
-                <div class="price_ns">49,500</div>
+                <div class="shopname">티다문구점</div>
+                <div class="itemname">십이야 리드 머그컵</div>
+                <div class="price">20,000</div>
                 <div class="review df">
-                  <div class="review_star df">
-                    <div class="review_img"></div>
-                    <div class="review_text">0(0)</div>
-                  </div>
-                  <div class="review_heart df">
-                    <div class="review_img"></div>
-                    <div class="review_text">0</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="section5_item3 size">
-              <div class="item_img">
-                <div class="num_deco"><div class="num">3</div></div>
-              </div>
-              <div class="item_text">
-                <div class="shopname">삼성전자</div>
-                <div class="itemname">갤럭시 S24Ultra 스마트 뷰 월렛 커버</div>
-                <div class="price">29% 34,900</div>
-                <div class="price_ns">49,500</div>
-                <div class="review df">
-                  <div class="review_star df">
-                    <div class="review_img"></div>
-                    <div class="review_text">0(0)</div>
-                  </div>
-                  <div class="review_heart df">
-                    <div class="review_img"></div>
-                    <div class="review_text">2</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="section5_item_wrap mid df">
-            <div class="section5_item4 size">
-              <div class="item_img">
-                <div class="num_deco"><div class="num">4</div></div>
-              </div>
-              <div class="item_text">
-                <div class="shopname">삼성전자</div>
-                <div class="itemname">정품 갤럭시 S24 실리콘 케이스</div>
-                <div class="price">15% 28,000</div>
-                <div class="price_ns">33,000</div>
-                <div class="review df">
-                  <div class="review_star df">
-                    <div class="review_img"></div>
-                    <div class="review_text">0(0)</div>
-                  </div>
-                  <div class="review_heart df">
-                    <div class="review_img"></div>
-                    <div class="review_text">3</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="section5_item5 size">
-              <div class="item_img">
-                <div class="num_deco"><div class="num">5</div></div>
-              </div>
-              <div class="item_text">
-                <div class="shopname">삼성전자</div>
-                <div class="itemname">정품 갤럭시 S24 실리콘 케이스</div>
-                <div class="price">15% 28,000</div>
-                <div class="price_ns">33,000</div>
-                <div class="review df">
-                  <div class="review_star df">
-                    <div class="review_img"></div>
-                    <div class="review_text">0(0)</div>
-                  </div>
-                  <div class="review_heart df">
-                    <div class="review_img"></div>
-                    <div class="review_text">5</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="section5_item6 size">
-              <div class="item_img">
-                <div class="num_deco"><div class="num">6</div></div>
-              </div>
-              <div class="item_text">
-                <div class="shopname">삼성전자</div>
-                <div class="itemname">정품 갤럭시 S24 Ultra 실리콘 케이스</div>
-                <div class="price">15% 28,000</div>
-                <div class="price_ns">33,000</div>
-                <div class="review df">
-                  <div class="review_star df">
-                    <div class="review_img"></div>
-                    <div class="review_text">0(0)</div>
-                  </div>
-                  <div class="review_heart df">
-                    <div class="review_img"></div>
-                    <div class="review_text">2</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="section5_item_wrap bottom df">
-            <div class="section5_item7 size">
-              <div class="item_img">
-                <div class="num_deco"><div class="num">7</div></div>
-              </div>
-              <div class="item_text">
-                <div class="shopname">삼성전자</div>
-                <div class="itemname">갤럭시 S24 뷰케이스+25W충전기</div>
-                <div class="price">24% 59,900</div>
-                <div class="price_ns">79,200</div>
-                <div class="review df">
-                  <div class="review_star df">
-                    <div class="review_img"></div>
-                    <div class="review_text">0(0)</div>
-                  </div>
-                  <div class="review_heart df">
-                    <div class="review_img"></div>
-                    <div class="review_text">0</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="section5_item8 size">
-              <div class="item_img">
-                <div class="num_deco"><div class="num">8</div></div>
-              </div>
-              <div class="item_text">
-                <div class="shopname">삼성전자</div>
-                <div class="itemname">갤럭시 S24 뷰케이스+25W충전기</div>
-                <div class="price">24% 59,900</div>
-                <div class="price_ns">79,200</div>
-                <div class="review df">
-                  <div class="review_star df">
-                    <div class="review_img"></div>
-                    <div class="review_text">0(0)</div>
-                  </div>
-                  <div class="review_heart df">
-                    <div class="review_img"></div>
-                    <div class="review_text">0</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="section5_item9 size">
-              <div class="item_img">
-                <div class="num_deco"><div class="num">9</div></div>
-              </div>
-              <div class="item_text">
-                <div class="shopname">삼성전자</div>
-                <div class="itemname">S24 울트라 뷰케이스+25W충전기</div>
-                <div class="price">24% 59,900</div>
-                <div class="price_ns">79,200</div>
-                <div class="review df">
-                  <div class="review_star df">
-                    <div class="review_img"></div>
-                    <div class="review_text">0(0)</div>
-                  </div>
-                  <div class="review_heart df">
-                    <div class="review_img"></div>
-                    <div class="review_text">0</div>
-                  </div>
+                  <div class="review_img"></div>
+                  <div class="review_text">0(0)</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="section6 inner">
-        <div class="banner_wrap">
-          <div class="section6_banner no1">
-            <div class="section6_banner_title">MATCHING ITEM FOR LOVERS</div>
+      <div class="section3_bottom df">
+        <div class="section3_item df">
+          <div class="section3_item_btn df">
+            <div class="prev"></div>
+            <div class="next"></div>
           </div>
-          <div class="section6_banner no2">
-            <div class="section6_banner_title">JOYFUL NEW SEMESTER</div>
+          <div class="section3_item_wrap df">
+            <div class="section3_item3 size">
+              <div class="item_img">
+                <div class="limited"></div>
+              </div>
+              <div class="item_text">
+                <div class="shopname">티다문구점</div>
+                <div class="itemname">누렁이와 탱고 무선충전기</div>
+                <div class="price">35,000</div>
+                <div class="review df">
+                  <div class="review_img"></div>
+                  <div class="review_text">0(0)</div>
+                </div>
+              </div>
+            </div>
+            <div class="section3_item4 size">
+              <div class="item_img">
+                <div class="limited"></div>
+              </div>
+              <div class="item_text">
+                <div class="shopname">티다문구점</div>
+                <div class="itemname">누렁이와 탱고 콜드컵</div>
+                <div class="price">12,000</div>
+                <div class="review df">
+                  <div class="review_img"></div>
+                  <div class="review_text">0(0)</div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="section6_banner no3">
-            <div class="section6_banner_title">SWEET WHITE PRESENT</div>
-          </div>
-          <!-- <div class="section6_banner no4">
-            <div class="section6_banner_title">티다문구점 이벤트 EVENT</div>
-          </div> -->
+        </div>
+        <div class="section3_img2">
+          <img class="be_svg" src="./source/image/be.svg" alt="" />
+          <p>TIKI-TAKA SOOBOOKZ</p>
+          <p> 티다문구점 X 수북즈<br /> 누렁이와 탱고 에디션 </p>
         </div>
       </div>
-      <div class="section7 inner">
-        <p>놓치면 안될 특가 상품</p>
-        <p>Hot Sale</p>
-        <div class="section7_item_btn df">
-          <div class="prev"></div>
-          <div class="next"></div>
+    </div>
+    <div class="section4 inner">
+      <div class="cool_img"></div>
+    </div>
+    <div class="section5 inner df">
+      <div class="section5_left">
+        <p>지금 뜨는 베스트</p>
+        <p>Best</p>
+        <div class="category df">
+          <div class="mobile">Mobile</div>
+          <div class="life">Life</div>
+          <div class="digital">Digital</div>
         </div>
-        <div class="section7_item_wrap df">
-          <div class="section7_item1 size">
-            <div class="item_img"></div>
+      </div>
+      <div class="section5_right">
+        <div class="section5_item_wrap top df">
+          <div class="section5_item1 size">
+            <div class="item_img">
+              <div class="num_deco">
+                <div class="num">1</div>
+              </div>
+            </div>
             <div class="item_text">
-              <div class="shopname">인스탁스</div>
-              <div class="itemname">미니 리플레이 LOVE-Li 패키지</div>
-              <div class="price">8% 201,400</div>
-              <div class="price_ns">219,000</div>
+              <div class="shopname">삼성전자</div>
+              <div class="itemname">갤럭시 S24 스마트 뷰 월렛 케이스</div>
+              <div class="price">29% 34,900</div>
+              <div class="price_ns">49,500</div>
+              <div class="review df">
+                <div class="review_star df">
+                  <div class="review_img"></div>
+                  <div class="review_text">0(0)</div>
+                </div>
+                <div class="review_heart df">
+                  <div class="review_img"></div>
+                  <div class="review_text">1</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section5_item2 size">
+            <div class="item_img">
+              <div class="num_deco">
+                <div class="num">2</div>
+              </div>
+            </div>
+            <div class="item_text">
+              <div class="shopname">삼성전자</div>
+              <div class="itemname">갤럭시 S24 스마트 뷰 월렛 케이스</div>
+              <div class="price">29% 34,900</div>
+              <div class="price_ns">49,500</div>
               <div class="review df">
                 <div class="review_star df">
                   <div class="review_img"></div>
@@ -606,13 +412,17 @@
               </div>
             </div>
           </div>
-          <div class="section7_item2 size">
-            <div class="item_img"></div>
+          <div class="section5_item3 size">
+            <div class="item_img">
+              <div class="num_deco">
+                <div class="num">3</div>
+              </div>
+            </div>
             <div class="item_text">
-              <div class="shopname">인스탁스</div>
-              <div class="itemname">인스탁스 미니12 폴라로이드+선물SET</div>
-              <div class="price">8% 118,680</div>
-              <div class="price_ns">129,000</div>
+              <div class="shopname">삼성전자</div>
+              <div class="itemname">갤럭시 S24Ultra 스마트 뷰 월렛 커버</div>
+              <div class="price">29% 34,900</div>
+              <div class="price_ns">49,500</div>
               <div class="review df">
                 <div class="review_star df">
                   <div class="review_img"></div>
@@ -620,18 +430,24 @@
                 </div>
                 <div class="review_heart df">
                   <div class="review_img"></div>
-                  <div class="review_text">1</div>
+                  <div class="review_text">2</div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="section7_item3 size">
-            <div class="item_img"></div>
+        </div>
+        <div class="section5_item_wrap mid df">
+          <div class="section5_item4 size">
+            <div class="item_img">
+              <div class="num_deco">
+                <div class="num">4</div>
+              </div>
+            </div>
             <div class="item_text">
-              <div class="shopname">인스탁스</div>
-              <div class="itemname">미니링크2 포토프린터+선물SET</div>
-              <div class="price">8% 164,680</div>
-              <div class="price_ns">179,000</div>
+              <div class="shopname">삼성전자</div>
+              <div class="itemname">정품 갤럭시 S24 실리콘 케이스</div>
+              <div class="price">15% 28,000</div>
+              <div class="price_ns">33,000</div>
               <div class="review df">
                 <div class="review_star df">
                   <div class="review_img"></div>
@@ -639,18 +455,22 @@
                 </div>
                 <div class="review_heart df">
                   <div class="review_img"></div>
-                  <div class="review_text">1</div>
+                  <div class="review_text">3</div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="section7_item4 size">
-            <div class="item_img"></div>
+          <div class="section5_item5 size">
+            <div class="item_img">
+              <div class="num_deco">
+                <div class="num">5</div>
+              </div>
+            </div>
             <div class="item_text">
-              <div class="shopname">인스탁스</div>
-              <div class="itemname">인스탁스 미니필름 20장+선물2종SET</div>
-              <div class="price">8% 21,000</div>
-              <div class="price_ns">22,900</div>
+              <div class="shopname">삼성전자</div>
+              <div class="itemname">정품 갤럭시 S24 실리콘 케이스</div>
+              <div class="price">15% 28,000</div>
+              <div class="price_ns">33,000</div>
               <div class="review df">
                 <div class="review_star df">
                   <div class="review_img"></div>
@@ -658,20 +478,236 @@
                 </div>
                 <div class="review_heart df">
                   <div class="review_img"></div>
-                  <div class="review_text">1</div>
+                  <div class="review_text">5</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section5_item6 size">
+            <div class="item_img">
+              <div class="num_deco">
+                <div class="num">6</div>
+              </div>
+            </div>
+            <div class="item_text">
+              <div class="shopname">삼성전자</div>
+              <div class="itemname">정품 갤럭시 S24 Ultra 실리콘 케이스</div>
+              <div class="price">15% 28,000</div>
+              <div class="price_ns">33,000</div>
+              <div class="review df">
+                <div class="review_star df">
+                  <div class="review_img"></div>
+                  <div class="review_text">0(0)</div>
+                </div>
+                <div class="review_heart df">
+                  <div class="review_img"></div>
+                  <div class="review_text">2</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section5_item_wrap bottom df">
+          <div class="section5_item7 size">
+            <div class="item_img">
+              <div class="num_deco">
+                <div class="num">7</div>
+              </div>
+            </div>
+            <div class="item_text">
+              <div class="shopname">삼성전자</div>
+              <div class="itemname">갤럭시 S24 뷰케이스+25W충전기</div>
+              <div class="price">24% 59,900</div>
+              <div class="price_ns">79,200</div>
+              <div class="review df">
+                <div class="review_star df">
+                  <div class="review_img"></div>
+                  <div class="review_text">0(0)</div>
+                </div>
+                <div class="review_heart df">
+                  <div class="review_img"></div>
+                  <div class="review_text">0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section5_item8 size">
+            <div class="item_img">
+              <div class="num_deco">
+                <div class="num">8</div>
+              </div>
+            </div>
+            <div class="item_text">
+              <div class="shopname">삼성전자</div>
+              <div class="itemname">갤럭시 S24 뷰케이스+25W충전기</div>
+              <div class="price">24% 59,900</div>
+              <div class="price_ns">79,200</div>
+              <div class="review df">
+                <div class="review_star df">
+                  <div class="review_img"></div>
+                  <div class="review_text">0(0)</div>
+                </div>
+                <div class="review_heart df">
+                  <div class="review_img"></div>
+                  <div class="review_text">0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section5_item9 size">
+            <div class="item_img">
+              <div class="num_deco">
+                <div class="num">9</div>
+              </div>
+            </div>
+            <div class="item_text">
+              <div class="shopname">삼성전자</div>
+              <div class="itemname">S24 울트라 뷰케이스+25W충전기</div>
+              <div class="price">24% 59,900</div>
+              <div class="price_ns">79,200</div>
+              <div class="review df">
+                <div class="review_star df">
+                  <div class="review_img"></div>
+                  <div class="review_text">0(0)</div>
+                </div>
+                <div class="review_heart df">
+                  <div class="review_img"></div>
+                  <div class="review_text">0</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="section8 inner">
-        <p>방금 나온 신제품</p>
-        <p>New Arrival</p>
-        <div class="everything_img">
-          <div class="section8_item_wrap">
-            <div class="item1_wrap">
-              <div class="item1_img"></div>
+    </div>
+    <div class="section6 inner">
+      <div class="banner_wrap">
+        <div class="section6_banner no1">
+          <div class="section6_banner_title">MATCHING ITEM FOR LOVERS</div>
+        </div>
+        <div class="section6_banner no2">
+          <div class="section6_banner_title">JOYFUL NEW SEMESTER</div>
+        </div>
+        <div class="section6_banner no3">
+          <div class="section6_banner_title">SWEET WHITE PRESENT</div>
+        </div>
+        <!-- <div class="section6_banner no4">
+            <div class="section6_banner_title">티다문구점 이벤트 EVENT</div>
+          </div> -->
+      </div>
+    </div>
+    <div class="section7 inner">
+      <p>놓치면 안될 특가 상품</p>
+      <p>Hot Sale</p>
+      <div class="section7_item_btn df">
+        <div class="prev"></div>
+        <div class="next"></div>
+      </div>
+      <div class="section7_item_wrap df">
+        <div class="section7_item1 size">
+          <div class="item_img"></div>
+          <div class="item_text">
+            <div class="shopname">인스탁스</div>
+            <div class="itemname">미니 리플레이 LOVE-Li 패키지</div>
+            <div class="price">8% 201,400</div>
+            <div class="price_ns">219,000</div>
+            <div class="review df">
+              <div class="review_star df">
+                <div class="review_img"></div>
+                <div class="review_text">0(0)</div>
+              </div>
+              <div class="review_heart df">
+                <div class="review_img"></div>
+                <div class="review_text">0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section7_item2 size">
+          <div class="item_img"></div>
+          <div class="item_text">
+            <div class="shopname">인스탁스</div>
+            <div class="itemname">인스탁스 미니12 폴라로이드+선물SET</div>
+            <div class="price">8% 118,680</div>
+            <div class="price_ns">129,000</div>
+            <div class="review df">
+              <div class="review_star df">
+                <div class="review_img"></div>
+                <div class="review_text">0(0)</div>
+              </div>
+              <div class="review_heart df">
+                <div class="review_img"></div>
+                <div class="review_text">1</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section7_item3 size">
+          <div class="item_img"></div>
+          <div class="item_text">
+            <div class="shopname">인스탁스</div>
+            <div class="itemname">미니링크2 포토프린터+선물SET</div>
+            <div class="price">8% 164,680</div>
+            <div class="price_ns">179,000</div>
+            <div class="review df">
+              <div class="review_star df">
+                <div class="review_img"></div>
+                <div class="review_text">0(0)</div>
+              </div>
+              <div class="review_heart df">
+                <div class="review_img"></div>
+                <div class="review_text">1</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section7_item4 size">
+          <div class="item_img"></div>
+          <div class="item_text">
+            <div class="shopname">인스탁스</div>
+            <div class="itemname">인스탁스 미니필름 20장+선물2종SET</div>
+            <div class="price">8% 21,000</div>
+            <div class="price_ns">22,900</div>
+            <div class="review df">
+              <div class="review_star df">
+                <div class="review_img"></div>
+                <div class="review_text">0(0)</div>
+              </div>
+              <div class="review_heart df">
+                <div class="review_img"></div>
+                <div class="review_text">1</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section8 inner">
+      <p>방금 나온 신제품</p>
+      <p>New Arrival</p>
+      <div class="everything_img ">
+        <div class="section8_item_wrap swiper1">
+          <div class="swiper-wrapper">
+            <div class="item1_wrap swiper-slide">
+              <div class="item_img item1_img"></div>
+              <div class="item_text">
+                <div class="shopname">샤오미</div>
+                <div class="itemname">샤오미 스마트 가습기2 무소음</div>
+                <div class="price">58,800</div>
+                <div class="review df">
+                  <div class="review_star df">
+                    <div class="review_img"></div>
+                    <div class="review_text">0(0)</div>
+                  </div> <!-- //.review_star -->
+                  <div class="review_heart df">
+                    <div class="review_img"></div>
+                    <div class="review_text">0</div>
+                  </div><!-- //.review_star -->
+                </div>
+              </div><!-- //.item_text -->
+            </div>
+            <div class="item2_wrap swiper-slide">
+              <div class="item_img item2_img"></div>
               <div class="item_text">
                 <div class="shopname">샤오미</div>
                 <div class="itemname">샤오미 스마트 가습기2 무소음</div>
@@ -688,157 +724,131 @@
                 </div>
               </div>
             </div>
-            <div class="item2_wrap">
-              <div class="item2_img"></div>
-              <div class="item_text">
-                <div class="shopname">샤오미</div>
-                <div class="itemname">샤오미 스마트 가습기2 무소음</div>
-                <div class="price">58,800</div>
-                <div class="review df">
-                  <div class="review_star df">
-                    <div class="review_img"></div>
-                    <div class="review_text">0(0)</div>
-                  </div>
-                  <div class="review_heart df">
-                    <div class="review_img"></div>
-                    <div class="review_text">0</div>
-                  </div>
-                </div>
+          </div><!-- //swiper-wrapper -->
+        </div> <!-- //swiper1 -->
+      </div>
+    </div>
+    <div class="section9 inner">
+      <p>티다문구점 MD 추천</p>
+      <p>MD Pick</p>
+      <div class="section9_item_btn df">
+        <div class="prev"></div>
+        <div class="next"></div>
+      </div>
+      <div class="section9_item_wrap df">
+        <div class="section9_item1 size">
+          <div class="item_img"></div>
+          <div class="item_text">
+            <div class="shopname">나그참파</div>
+            <div class="itemname">나그참파 프레스티지 세트(+엽서증정)</div>
+            <div class="price">37% 49,900</div>
+            <div class="price_ns">79,900</div>
+            <div class="review df">
+              <div class="review_star df">
+                <div class="review_img"></div>
+                <div class="review_text">0(0)</div>
+              </div>
+              <div class="review_heart df">
+                <div class="review_img"></div>
+                <div class="review_text">1</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section9_item2 size">
+          <div class="item_img"></div>
+          <div class="item_text">
+            <div class="shopname">나그참파</div>
+            <div class="itemname">나그참파 캔들 라지자 기프트 세트</div>
+            <div class="price">19% 36,900</div>
+            <div class="price_ns">45,900</div>
+            <div class="review df">
+              <div class="review_star df">
+                <div class="review_img"></div>
+                <div class="review_text">0(0)</div>
+              </div>
+              <div class="review_heart df">
+                <div class="review_img"></div>
+                <div class="review_text">2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section9_item3 size">
+          <div class="item_img">
+            <div class="limited"></div>
+          </div>
+          <div class="item_text">
+            <div class="shopname">티다문구점</div>
+            <div class="itemname">누렁이와 탱고 무선충전기</div>
+            <div class="price">35,000</div>
+            <div class="review df">
+              <div class="review_star df">
+                <div class="review_img"></div>
+                <div class="review_text">0(0)</div>
+              </div>
+              <div class="review_heart df">
+                <div class="review_img"></div>
+                <div class="review_text">1</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section9_item4 size">
+          <div class="item_img">
+            <div class="limited"></div>
+          </div>
+          <div class="item_text">
+            <div class="shopname">티다문구점</div>
+            <div class="itemname">누렁이와 탱고 데스크매트</div>
+            <div class="price">24,000</div>
+            <div class="review df">
+              <div class="review_star df">
+                <div class="review_img"></div>
+                <div class="review_text">5(3)</div>
+              </div>
+              <div class="review_heart df">
+                <div class="review_img"></div>
+                <div class="review_text">2</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="section9 inner">
-        <p>티다문구점 MD 추천</p>
-        <p>MD Pick</p>
-        <div class="section9_item_btn df">
-          <div class="prev"></div>
-          <div class="next"></div>
-        </div>
-        <div class="section9_item_wrap df">
-          <div class="section9_item1 size">
-            <div class="item_img"></div>
-            <div class="item_text">
-              <div class="shopname">나그참파</div>
-              <div class="itemname">나그참파 프레스티지 세트(+엽서증정)</div>
-              <div class="price">37% 49,900</div>
-              <div class="price_ns">79,900</div>
-              <div class="review df">
-                <div class="review_star df">
-                  <div class="review_img"></div>
-                  <div class="review_text">0(0)</div>
-                </div>
-                <div class="review_heart df">
-                  <div class="review_img"></div>
-                  <div class="review_text">1</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="section9_item2 size">
-            <div class="item_img"></div>
-            <div class="item_text">
-              <div class="shopname">나그참파</div>
-              <div class="itemname">나그참파 캔들 라지자 기프트 세트</div>
-              <div class="price">19% 36,900</div>
-              <div class="price_ns">45,900</div>
-              <div class="review df">
-                <div class="review_star df">
-                  <div class="review_img"></div>
-                  <div class="review_text">0(0)</div>
-                </div>
-                <div class="review_heart df">
-                  <div class="review_img"></div>
-                  <div class="review_text">2</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="section9_item3 size">
-            <div class="item_img">
-              <div class="limited"></div>
-            </div>
-            <div class="item_text">
-              <div class="shopname">티다문구점</div>
-              <div class="itemname">누렁이와 탱고 무선충전기</div>
-              <div class="price">35,000</div>
-              <div class="review df">
-                <div class="review_star df">
-                  <div class="review_img"></div>
-                  <div class="review_text">0(0)</div>
-                </div>
-                <div class="review_heart df">
-                  <div class="review_img"></div>
-                  <div class="review_text">1</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="section9_item4 size">
-            <div class="item_img">
-              <div class="limited"></div>
-            </div>
-            <div class="item_text">
-              <div class="shopname">티다문구점</div>
-              <div class="itemname">누렁이와 탱고 데스크매트</div>
-              <div class="price">24,000</div>
-              <div class="review df">
-                <div class="review_star df">
-                  <div class="review_img"></div>
-                  <div class="review_text">5(3)</div>
-                </div>
-                <div class="review_heart df">
-                  <div class="review_img"></div>
-                  <div class="review_text">2</div>
-                </div>
-              </div>
-            </div>
-          </div>
+    </div>
+    <div class="section10 inner"></div>
+  </main>
+  <footer>
+    <div class="footer_wrap df">
+      <div class="footer_left">
+        <ul class="footer_left_top df">
+          <li><a href="#">상품구매약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+        <ul class="footer_left_middle df">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">제휴문의</a></li>
+          <li><a href="#">티다문구점 소개</a></li>
+        </ul>
+        <ul class="footer_left_bottom">
+          <li>에스케이텔레콤(주)</li>
+          <li> 대표이사/사장 유영상&nbsp;&nbsp;&nbsp;사업자등록번호 104-81-37225&nbsp;&nbsp;&nbsp;판매허가번호 중구 02923호&nbsp;&nbsp;&nbsp;서울특별시 중구 을지로 65&nbsp;&nbsp;&nbsp; <a href="#">사업자정보확인</a>
+          </li>
+          <li> 피에스앤마케팅(주)&nbsp;&nbsp;&nbsp;수탁운영업체 : 서울특별시 마포구 마포대로 144(공덕동, 마포티타운)&nbsp;&nbsp;&nbsp;사장 : 허선영&nbsp;&nbsp;&nbsp;사업자등록번호 : 104-86-20016&nbsp;&nbsp;&nbsp;판매허가번호 : 2020-서울마포-1276&nbsp;&nbsp;&nbsp;<a href="#">사업자정보확인</a>
+          </li>
+          <li>&copy; 티다문구점 Powered by T direct shop</li>
+        </ul>
+      </div>
+      <div class="footer_right">
+        <div class="cs_number">1599-1932</div>
+        <div class="cs_info">
+          <p>고객센터 평일 09:00 - 18:00 (토/일/공휴일 휴무)</p>
+          <p>점심시간 12:00 - 13:00</p>
         </div>
       </div>
-      <div class="section10 inner"></div>
-    </main>
-    <footer>
-      <div class="footer_wrap df">
-        <div class="footer_left">
-          <ul class="footer_left_top df">
-            <li><a href="#">상품구매약관</a></li>
-            <li><a href="#">개인정보처리방침</a></li>
-          </ul>
-          <ul class="footer_left_middle df">
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">공지사항</a></li>
-            <li><a href="#">제휴문의</a></li>
-            <li><a href="#">티다문구점 소개</a></li>
-          </ul>
-          <ul class="footer_left_bottom">
-            <li>에스케이텔레콤(주)</li>
-            <li>
-              대표이사/사장 유영상&nbsp;&nbsp;&nbsp;사업자등록번호
-              104-81-37225&nbsp;&nbsp;&nbsp;판매허가번호 중구
-              02923호&nbsp;&nbsp;&nbsp;서울특별시 중구 을지로
-              65&nbsp;&nbsp;&nbsp;
-              <a href="#">사업자정보확인</a>
-            </li>
-            <li>
-              피에스앤마케팅(주)&nbsp;&nbsp;&nbsp;수탁운영업체 : 서울특별시
-              마포구 마포대로 144(공덕동, 마포티타운)&nbsp;&nbsp;&nbsp;사장 :
-              허선영&nbsp;&nbsp;&nbsp;사업자등록번호 :
-              104-86-20016&nbsp;&nbsp;&nbsp;판매허가번호 :
-              2020-서울마포-1276&nbsp;&nbsp;&nbsp;<a href="#">사업자정보확인</a>
-            </li>
-            <li>&copy; 티다문구점 Powered by T direct shop</li>
-          </ul>
-        </div>
-        <div class="footer_right">
-          <div class="cs_number">1599-1932</div>
-          <div class="cs_info">
-            <p>고객센터 평일 09:00 - 18:00 (토/일/공휴일 휴무)</p>
-            <p>점심시간 12:00 - 13:00</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
